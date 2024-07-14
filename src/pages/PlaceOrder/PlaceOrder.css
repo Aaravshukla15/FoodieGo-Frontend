@@ -33,3 +33,28 @@
 .place-order .cart button{
     margin-top: 30px;
 }
+@media (max-width: 768px) {
+    .place-order {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .place-order-left,
+    .place-order-right {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .place-order-left .multiFields {
+        flex-direction: column;
+    }
+
+    .place-order-left .title {
+        font-size: 24px;
+    }
+
+    .place-order-left input {
+        padding: 8px;
+    }
+}
